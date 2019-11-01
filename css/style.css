@@ -1,0 +1,204 @@
+
+
+*{ 
+    margin:  0px;
+    padding: 0px;
+
+}
+body{
+  background-color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+    color: #3f382e;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.logoimg{
+float: left;
+margin-left: 20px;
+position: absolute
+
+}
+.NavSup h1 {
+    
+    margin-bottom:30px;
+}
+
+nav {
+    position: fixed;
+    float: left;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 10px 100px 0 rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    padding: 17px 0px 17px 0px;  
+    text-align: right;
+    z-index: 1;
+    
+  }
+  nav ul{
+
+    padding: 32px;
+  }
+  nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    text-align: left;
+    margin-right: 12px;
+  }
+  
+  nav ul li a {
+    padding: 10px;
+    color:#53545f;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+  a:link
+{
+text-decoration:none;
+color:#060e10;
+}
+
+a:hover {
+  opacity: 1;
+  color:#000000;
+  
+}
+nav ul li ul li {
+
+  display: none;
+}
+
+/*Primer libro */
+
+.SecLibros {
+  margin: 50px 50px;
+}
+.SecLibros h1, h5{
+text-align: center;
+margin: 20px;
+}
+
+/*Paralax*/
+/*imagenes en paralax*/
+.PrImg{
+  background-image:linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ), url('../imagenes/fondo3.jpg');
+  
+}
+.SegImg{
+  background-image:linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ), url('../imagenes/te3.jpg')
+}
+.TerImg{
+  background-image:linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ), url('../imagenes/foto2.jpg')
+}
+.CuaImg{
+  background-image:linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ), url('../imagenes/terror2.jpg')
+}
+/*Condiciones de los paralax*/
+.NavSup{
+  max-width:100%;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  align-self: auto;
+  
+  
+  }
+
+    /* Imagenes de libros */
+    .contenedor{
+        display: inline-flex;
+        padding: 0px 150px;
+        align-content: center;
+     
+    }
+    .DesLibr{
+      flex: 2;
+      margin-left: 50px;
+      padding-top: 20px;
+      text-align: justify;
+      justify-content: center  
+    }
+    .carousel-item{
+      flex:1;
+    }
+    
+    @media screen and (max-width: 1000px) {
+      .contenedor {   
+        flex-direction: column;
+        padding: 0px;
+      }
+      .imagenCon{
+        text-align: center;
+      }
+      .DesLibr{
+        margin: 0px 10px;
+        padding-top: 20px;
+      }
+  
+    }
+    
+
+
+    footer{
+      margin: 0px 0px; 
+      padding: 30px;
+      text-align: center;
+      border-top:solid 1px gray;      
+    }
+
+/* prueba */
+.main-content {
+  overflow:hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+.noise {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    pointer-events: none;
+    opacity: .15;
+}
+
+.main-title {
+    padding: .3em 1em .25em;    
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+    font-family: 'Bellefair', serif;
+    position:relative;
+    line-height:1.3;
+    
+}
+
+/* prueba Galeria con Flexbox */
+
